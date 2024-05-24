@@ -1,0 +1,6 @@
+function L = Loss(e,y)
+N=length(e);
+for i=1:N
+L=-(1/N)+sum(e.*log(y)+(1-e).*log(1-y));
+end
+
